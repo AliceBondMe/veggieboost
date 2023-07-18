@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veggie Boost</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-div">
+        <nav class="header-nav">
+          <ul class="menu-list">
+            <li>
+              <a href="#how-it-works" class="menu-link">How It Works</a>
+            </li>
+            <li>
+              <a href="#vegetables" class="menu-link">Vegetables</a>
+            </li>
+            <li><a href="#contacts" class="menu-link">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header-svg-div">
+          <a href="" class="header-svg-link">
+            <svg class="header-logo-svg" width="16" height="16">
+              <use href="./img/symbol-defs.svg#logo"></use>
+            </svg>
+          </a>
+          <a href="#hero" class="header-logo-link">Veggieboost</a>
+        </div>
+        <button type="button" class="menu-svg-link" data-modal-open>
+          <svg class="basket-svg" width="20" height="20">
+            <use href="./img/symbol-defs.svg#shopping-cart"></use>
+          </svg>
+        </button>
+        <button class="burger-menu" type="button" data-menu-open>
+          <svg class="burger-menu-svg" width="24" height="24">
+            <use href="./img/symbol-defs.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="mob-menu is-hidden" data-menu>
+      <div class="mob-header-div">
+        <div class="header-svg-div">
+          <a href="" class="header-svg-link">
+            <svg class="header-logo-svg" width="16" height="16">
+              <use href="./img/symbol-defs.svg#logo"></use>
+            </svg>
+          </a>
+          <a href="#hero" class="header-logo-link">Veggieboost</a>
+        </div>
+        <button class="mob-menu-x" type="button" data-menu-close>
+          <svg class="mob-menu-x-svg" width="24" height="24">
+            <use href="./img/symbol-defs.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="main-mob-menu">
+        <nav class="mob-nav">
+          <ul class="mob-menu-list">
+            <li>
+              <a href="#how-it-works" class="mob-menu-link">How It Works</a>
+            </li>
+            <li>
+              <a href="#vegetables" class="mob-menu-link">Vegetables</a>
+            </li>
+            <li>
+              <a href="#contacts" class="mob-menu-link">Contacts</a>
+            </li>
+            <li>
+              <button type="button" class="mob-order-btn" data-modal-open>
+                <svg class="mob-basket-svg" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#shopping-cart"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-box">
+            <div class="hero-box-left">
+              <ul class="hero-reviews-list">
+                <li class="hero-reviews-item">
+                  <a class="hero-reviews-link" href="#"
+                    ><img
+                      class="hero-reviews-photo"
+                      srcset="
+                        ./img/hero/reviews-photo.jpg    1x,
+                        ./img/hero/reviews-photo-2x.jpg 2x
+                      "
+                      src="./img/hero/reviews-photo.jpg"
+                      alt="photo"
+                      width="66"
+                      height="66"
+                  /></a>
+                </li>
+                <li class="hero-reviews-item">
+                  <a class="hero-reviews-link" href="#"
+                    ><img
+                      class="hero-reviews-photo"
+                      srcset="
+                        ./img/hero/reviews-photo2.jpg    1x,
+                        ./img/hero/reviews-photo2-2x.jpg 2x
+                      "
+                      src="./img/hero/reviews-photo2.jpg"
+                      alt="photo"
+                      width="66"
+                      height="66"
+                  /></a>
+                </li>
+                <li class="hero-reviews-item">
+                  <a class="hero-reviews-link" href="#"
+                    ><img
+                      class="hero-reviews-photo"
+                      srcset="
+                        ./img/hero/reviews-photo3.jpg    1x,
+                        ./img/hero/reviews-photo3-2x.jpg 2x
+                      "
+                      src="./img/hero/reviews-photo3.jpg"
+                      alt="photo"
+                      width="66"
+                      height="66"
+                  /></a>
+                </li>
+                <li class="hero-reviews-item">
+                  <a class="hero-reviews-link" href="#"
+                    ><p class="hero-reviews-text">2K <span>reviews</span></p></a
+                  >
+                </li>
+              </ul>
+              <h1 class="hero-title">
+                Organic <span>vegetables</span> to your diet today!
+              </h1>
+              <p class="hero-paragraph">
+                Our expertly curated vegetable baskets are made with the
+                freshest, highest quality vegetables available. Fresh Harvest
+                Box has got you covered. Fresh, high-quality vegetables in
+                expertly curated vegetable baskets delivered to you.
+              </p>
+              <button class="hero-button" type="button" data-modal-open>
+                Shop <br />
+                now
+              </button>
+            </div>
+
+            <img
+              class="hero-photo"
+              srcset="
+                ./img/hero/hero-photo-bg.png    1x,
+                ./img/hero/hero-photo-bg-2x.png 2x
+              "
+              src="./img/hero/hero-photo-bg.png"
+              alt="Photo"
+              width="515"
+              height="423"
+            />
+          </div>
+          <div class="hero-list-link">
+            <ul class="hero-link-list">
+              <li class="hero-link-item">
+                <a class="hero-link" href="#">#Organic</a>
+              </li>
+              <li class="hero-link-item">
+                <a class="hero-link" href="#">#Products</a>
+              </li>
+              <li class="hero-link-item">
+                <a class="hero-link" href="#">#Basket</a>
+              </li>
+              <li class="hero-link-item">
+                <a class="hero-link" href="#">#Vegetables</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works-first-part" id="how-it-works">
+        <div class="container vegetables-baket-container">
+          <div class="vegetables-baket-first">
+            <h2 class="works-title">
+              To order your vegetable basket, simply follow these easy steps
+            </h2>
+            <picture>
+              <source
+                srcset="
+                  ./img/how-it-works-one/img_broccoli_desctop.png    1x,
+                  ./img/how-it-works-one/img_broccoli_desctop@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/how-it-works-one/img_broccoli_tablet.png    1x,
+                  ./img/how-it-works-one/img_broccoli_tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/how-it-works-one/img-broccoli-mob-1x.png 1x,
+                  ./img/how-it-works-one/img-broccoli-mob-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+
+              <img
+                src="./img/how-it-works-one/img-broccoli-mob-1x.png"
+                alt="broccoli"
+                width="335"
+                height="158"
+                class="works-picture"
+              />
+            </picture>
+          </div>
+          <div class="vegetables-baket-secondary">
+            <p class="main-slogan">
+              Our baskets are assembled with care and delivered straight to your
+              doorstep, so you can enjoy the taste of fresh fruit without ever
+              leaving your home.
+            </p>
+
+            <p class="secondary-slogan">
+              Whether you're looking for a healthy snack or a thoughtful gift,
+              our fruit baskets are the perfect choice.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hiw2">
+        <div class="container">
+          <div class="hiw2-wrap">
+            <div class="hiw2-text-part">
+              <h2 class="hiw2-title">
+                3 Easy Steps for Buying Fresh Vegetables
+              </h2>
+              <ol class="hiw2-list">
+                <li class="hiw2-item">
+                  Just choose the vegetable you want to order by clicking on the
+                  checkboxes next to it.
+                </li>
+                <li class="hiw2-item">
+                  Click on the basket and fill out the form.
+                </li>
+                <li class="hiw2-item">
+                  Sit back and relax! Your fresh vegetables basket will be
+                  delivered.
+                </li>
+              </ol>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./img/how-it-works-2-img/little-girl-desc.png    1x,
+                  ./img/how-it-works-2-img/little-girl-desc-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/how-it-works-2-img/little-girl-tab.png    1x,
+                  ./img/how-it-works-2-img/little-girl-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/how-it-works-2-img/little-girl.png    1x,
+                  ./img/how-it-works-2-img/little-girl-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/how-it-works-2-img/little-girl.png"
+                alt="little girl with lettuce"
+                width="258"
+                height="319"
+                class="hiw2-picture"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="vegetables-section" id="vegetables">
+        <div class="vegetables-container container">
+          <h2 class="vegetables-title">Organic vegetables</h2>
+          <p class="vegetables-subtitle">
+            Our organic vegetables are hand-picked from local farms and
+            delivered straight to your doorstep, ensuring that you get the
+            freshest and most nutritious produce possible.
+          </p>
+          <ul class="veg-list">
+            <li class="veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Carrot</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/carrot-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/carrot-tablet-2x-min.png 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/img-vegetable/carrot-mobile-1x-min.png 1x,
+                          ./img/img-vegetable/carrot-mobile-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/carrot-mobile-1x-min.png"
+                        alt="carrot"
+                        width="300"
+                        height="250"
+                        class="card-picture"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">100 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Carrots are full of benefits—they may promote healthy
+                    vision, balance your blood sugar, help with weight
+                    management, lower your risk of cancer, regulate blood
+                    pressure, reduce heart disease, improve immunity, and boost
+                    brain health.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Brussel sprouts</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/brussel-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/brussel-tablet-2x-min.png 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/img-vegetable/brussel-mobile-1x-min.png 1x,
+                          ./img/img-vegetable/brussel-mobile-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/brussel-mobile-1x-min.png"
+                        alt="brussel"
+                        width="300"
+                        height="250"
+                        class="card-picture"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">80 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Brussels sprouts are high in fiber, vitamins, minerals, and
+                    antioxidants, making them a nutritious addition to your
+                    diet. They may also come with added health benefits,
+                    including decreased inflammation and improved immune system
+                    health.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Tomato</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/tomato-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/tomato-tablet-2x-min.png 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/img-vegetable/tomato-mobile-1x-min.png 1x,
+                          ./img/img-vegetable/tomato-mobile-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/tomato-mobile-1x-min.png"
+                        alt="Tomato"
+                        width="300"
+                        height="250"
+                        class="card-picture"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">40 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Tomatoes are packed with vitamins, minerals, and
+                    antioxidants. With their high lycopene content, they
+                    contribute to a reduced risk of heart disease and cancer.
+                    The intake of tomatoes may also improve eye health,
+                    digestive health, and reduce risk of osteoporosis.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Eggplant</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/eggplant-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/eggplant-tablet-2x-min.png 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/img-vegetable/eggplant-mobile-1x-min.png 1x,
+                          ./img/img-vegetable/eggplant-mobile-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/eggplant-mobile-1x-min.png"
+                        alt="Eggplant"
+                        width="300"
+                        height="250"
+                        class="card-picture"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">60 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Eggplants are rich in fiber and antioxidants. A serving of
+                    eggplant can provide at least 5% of a person's daily
+                    requirement of fiber, copper, manganese, B-6, and thiamine.
+                    It also contains other vitamins and minerals. In addition,
+                    eggplants are a source of phenolic compounds that act as
+                    antioxidants.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Sweet potatoes</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/potatoes-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/potatoes-tablet-2x-min.png 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/img-vegetable/potatoes-mobile-1x-min.png 1x,
+                          ./img/img-vegetable/potatoes-mobile-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/potatoes-mobile-1x-min.png"
+                        alt="Potatoes"
+                        width="300"
+                        height="250"
+                        class="card-picture"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">80 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Sweet potatoes are high in fiber and antioxidants, which
+                    protect your body from free radical damage and promote a
+                    healthy gut and brain. They're also incredibly rich in beta
+                    carotene, which is converted to vitamin A to support good
+                    vision and your immune system.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Leek</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/leek-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/leek-tablet-2x-min.png 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/img-vegetable/leek-mobile-1x-min.png 1x,
+                          ./img/img-vegetable/leek-mobile-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/leek-mobile-1x-min.png"
+                        alt="Leek"
+                        width="300"
+                        height="250"
+                        class="card-picture"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">50 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Leeks are low in calories but high in nutrients,
+                    particularly magnesium and vitamins A, C, and K. They boast
+                    small amounts of fiber, copper, vitamin B6, iron, and
+                    folate. Leeks are rich in antioxidants and sulfur compounds.
+                    These are thought to protect your body from disease.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Mushrooms</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/mushrooms-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/mushrooms-tablet-2x-min.png 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/img-vegetable/mashrooms-mobile-1x-min.png 1x,
+                          ./img/img-vegetable/mashrooms-mobile-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/mashrooms-mobile-1x-min.png"
+                        alt="Leek"
+                        width="300"
+                        height="250"
+                        class="card-picture"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">40 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Mushrooms are a low-calorie food that packs a nutritional
+                    punch. Loaded with many health-boosting vitamins, minerals,
+                    and antioxidants, they’ve long been recognized as an
+                    important part of any diet. The anti-inflammatory effect of
+                    mushrooms has been shown to greatly improve the efficiency
+                    of the immune system.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Corn</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/corn-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/corn-tablet-2x-min.png 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/img-vegetable/corn-mobile-1x-min.png 1x,
+                          ./img/img-vegetable/corn-mobile-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/corn-mobile-1x-min.png"
+                        alt="Corn"
+                        width="300"
+                        height="250"
+                        class="card-picture"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">60 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Choosing corn and whole-grain corn products -- rather than
+                    food that has processed white flour -- can lead to better
+                    gut health and help lower your chances of getting diseases
+                    like cancer, heart disease, and type 2 diabetes. The fiber
+                    in corn helps you stay full for longer between meals.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="veg-item-radish veg-item">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="text-cont">
+                    <h3 class="veg-item-title">Radish</h3>
+                    <p class="veg-item-text">Plant</p>
+                  </div>
+                  <div class="image-contnr">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/img-vegetable/radish-tablet-1x-min.png 1x,
+                          ./img/img-vegetable/radish-tablet-2x-min.png 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/img-vegetable/radish-tablet-1x-min.png"
+                        alt="Radish"
+                        width="300"
+                        height="250"
+                        class="card-picture active"
+                      />
+                    </picture>
+                  </div>
+                  <p class="veg-item-price">90 UAH / kg</p>
+                </div>
+                <div class="card__face card__face--back">
+                  <p class="veg-item-benefits">
+                    Radishes are a good source of antioxidants like catechin,
+                    pyrogallol, vanillic acid, and other phenolic compounds.
+                    These root vegetables also have a good amount of vitamin C,
+                    which acts as an antioxidant to protect your cells from
+                    damage.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="vegetables-button"
+            id="vegetables"
+            data-modal-open
+          >
+            <svg class="vegetables-strelka-icon" width="14" height="14">
+              <use href="./img/symbol-defs.svg#strelka"></use>
+            </svg>
+            Order
+          </button>
+        </div>
+      </section>
+
+      <section class="wwcy-section" id="">
+        <div class="wwcy-container">
+          <div class="wwcy-leftside-box">
+            <h1 class="wwcy-title">Fresh Harvest Box has got you covered</h1>
+            <p class="wwcy-txt">
+              Our boxes are packed with delicious, nutritious vegetables,
+              perfect for anyone looking to eat healthier or support local
+              farmers. Order your box today and start enjoying the best that
+              nature has to offer!
+            </p>
+
+            <form class="wwcy-form">
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                class="wwcy-form-input"
+                placeholder="+380 ()"
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                title="Number format has to be: +380 (**) ***-**-**"
+                required
+              />
+              <button type="submit" class="wwcy-button">Recall</button>
+            </form>
+          </div>
+          <div class="wwcy-li wwcy-image-box">
+            <picture>
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./img/we-will-call-you/img-girl-desk.png   1x,
+                  ./img/we-will-call-you/img-girl-desk2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/we-will-call-you/img-girl-tablet.png   1x,
+                  ./img/we-will-call-you/img-girl-tablet2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/we-will-call-you/img-girl.png   1x,
+                  ./img/we-will-call-you/img-girl2x.png 2x
+                "
+              />
+              <img
+                src="./img/we-will-call-you/img-girl.png"
+                alt="girl with the
+        broccoli"
+                class="wwcy-image"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer-container container">
+        <div class="footer-logo-nav">
+          <div class="footer-img-logo">
+            <picture>
+              <source
+                srcset="
+                  ./img/footer-img/broccoli-tab-1x.png 1x,
+                  ./img/footer-img/broccoli-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/footer-img/broccoli.jpg    1x,
+                  ./img/footer-img/broccoli-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/footer-img/broccoli.jpg"
+                class="footer-img"
+                width="335"
+                height="172"
+                alt="broccoli"
+              />
+            </picture>
+
+            <div class="footer-logo-container">
+              <a class="footer-logo-link" href="">
+                <svg class="footer-logo" width="16" height="16">
+                  <use href="./img/symbol-defs.svg#logo"></use>
+                </svg>
+                <span class="footer-logo-title">VEGGIEBOOST</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="#how-it-works" class="footer-nav-link">How It Works</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#vegetables" class="footer-nav-link">Vegetables</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#contacts" class="footer-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-soc-address">
+          <div class="footer-soc-container">
+            <ul class="footer-soc-list">
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/symbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/symbol-defs.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/symbol-defs.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li class="footer-address-tel">
+                <a class="footer-tel" href="tel:+380684439426"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="footer-address-map">
+                <a
+                  class="footer-map"
+                  href="https://goo.gl/maps/fMMjw9wqBxta4a886"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >1678 S. Pioneer Road Salt Lake City UT 84104
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn-close" data-modal-close>
+          <svg width="24" height="24" class="modal-close-icon">
+            <use href="./img/symbol-defs.svg#cross"></use>
+          </svg>
+        </button>
+
+        <h2 class="modal-title">Your Order</h2>
+        <ul class="modal-list-cards">
+          <li class="modal-item-cards">
+            <div class="modal-field modal-check-field">
+              <input
+                type="checkbox"
+                name="cabbage"
+                id="cabbage"
+                class="modal-check visually-hidden"
+                value="true"
+                checked
+              />
+              <label for="cabbage" class="check-label">
+                <span class="fake-checkbox"> </span>
+              </label>
+            </div>
+
+            <h3 class="modal-cards-title">Cabbage Basket</h3>
+            <p class="modal-cards-text">Plant</p>
+            <picture>
+              <source
+                srcset="
+                  ./img/img-modal/cabbage-top.png   1x,
+                  ./img/img-modal/cabbage-top2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/img-modal/cabbage-tab.png   1x,
+                  ./img/img-modal/cabbage-tab2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/img-modal/cabbage-mob.png   1x,
+                  ./img/img-modal/cabbage-mob2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/img-modal/cabbage-mob.png"
+                alt="A basket of Brussel sprouts"
+                width="94"
+                height="78"
+                class="modal-card-img"
+              />
+            </picture>
+          </li>
+
+          <li class="modal-item-cards">
+            <div class="modal-field modal-check-field">
+              <input
+                type="checkbox"
+                name="tomato"
+                id="tomato"
+                class="modal-check visually-hidden"
+                value="true"
+              />
+              <label for="tomato" class="check-label">
+                <span class="fake-checkbox"> </span>
+              </label>
+            </div>
+
+            <h3 class="modal-cards-title">Tomato Basket</h3>
+            <p class="modal-cards-text">Plant</p>
+            <picture>
+              <source
+                srcset="
+                  ./img/img-modal/tomato-top.png   1x,
+                  ./img/img-modal/tomato-top2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/img-modal/tomato-tab.png   1x,
+                  ./img/img-modal/tomato-tab2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/img-modal/tomato-mob.png   1x,
+                  ./img/img-modal/tomato-mob2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/img-modal/tomato-mob.png"
+                alt="A basket of Brussel sprouts"
+                width="94"
+                height="78"
+                class="modal-card-img"
+              />
+            </picture>
+          </li>
+
+          <li class="modal-item-cards">
+            <div class="modal-field modal-check-field">
+              <input
+                type="checkbox"
+                name="vege-busket"
+                id="vege-busket"
+                class="modal-check visually-hidden"
+                value="true"
+              />
+              <label for="vege-busket" class="check-label">
+                <span class="fake-checkbox"> </span>
+              </label>
+            </div>
+
+            <h3 class="modal-cards-title">Vegetables Basket</h3>
+            <p class="modal-cards-text">Plant</p>
+            <picture>
+              <source
+                srcset="
+                  ./img/img-modal/vegetables-top.png   1x,
+                  ./img/img-modal/vegetables-top2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/img-modal/vegetables-tab.png   1x,
+                  ./img/img-modal/vegetables-tab2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/img-modal/vegetables-mob.png   1x,
+                  ./img/img-modal/vegetables-mob2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/img-modal/vegetables-mob.png"
+                alt="A basket of Brussel sprouts"
+                width="94"
+                height="78"
+                class="modal-card-img"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <form class="modal-form">
+          <div class="all-input-form">
+            <label class="modal-label" aria-label="user-name">
+              <input
+                type="text"
+                name="user-name"
+                pattern="[^0-9]*"
+                placeholder="Enter full name..."
+                class="modal-input"
+                title="You can not enter numbers"
+                required
+              />
+            </label>
+            <label class="modal-label" aria-label="">
+              <input
+                type="email"
+                name="user-email"
+                placeholder="Enter email..."
+                class="modal-input"
+                required
+              />
+            </label>
+            <label class="modal-label" aria-label="">
+              <input
+                type="tel"
+                pattern="[0-9]{16,16}"
+                minlength="16"
+                maxlength="16"
+                name="card-number"
+                placeholder="Enter card.."
+                class="modal-input"
+                title="You have to enter 16 digits"
+                required
+              />
+            </label>
+            <label class="modal-label" aria-label="">
+              <textarea
+                name="user-comments"
+                placeholder="Enter comments..."
+                class="comments"
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit" class="modal-btn-submit">Submit</button>
+        </form>
+        <img
+          srcset="./img/img-modal/girl.png 1x, ./img/img-modal/girl2x.png 2x"
+          src="./img/images/girl.png"
+          width="444"
+          height="413"
+          alt="young woman with lettuce"
+          class="modal-girl"
+        />
+      </div>
+    </div>
+
+    <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/flipper.js"></script>
+    <a href="#" class="stt" title="scroll to top"></a>
+  </body>
+</html>
